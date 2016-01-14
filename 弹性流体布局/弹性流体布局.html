@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>弹性流体布局</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 100%;
+        }
+
+        #wrapper {
+            width: 72em;
+            height: 100em;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        #mainNav {
+            background-color: lightcoral;
+            width: 18em;
+            height: 80em;
+            max-width: 23%;
+            float: left;
+            text-align: center;
+        }
+
+        #content {
+            background-color: lightgrey;
+            width: 52em;
+            height: 80em;
+            max-width: 75%;
+            float: right;
+        }
+
+        #mainContent {
+            background-color: lightgoldenrodyellow;
+            width: 32em;
+            height: 80em;
+            max-width: 66%;
+            float: left;
+            text-align: center;
+        }
+
+        #secondaryContent {
+            background-color: lightskyblue;
+            width: 18em;
+            height: 80em;
+            max-width: 31%;
+            float: right;
+            text-align: center;
+        }
+
+        #footer {
+            clear: both;
+            width: 72em;
+            height: 10em;
+            max-width: 100%;
+            background-color: lightsalmon;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="mainNav">
+        左侧导航
+    </div>
+    <div id="content">
+        <div id="mainContent">
+            主要内容: 以em设置宽度，用百分比设置最大宽度。
+        </div>
+        <div id="secondaryContent">
+            次要内容：对于流体布局这些问题，可以使用弹性布局来解决。
+        </div>
+    </div>
+    <div id="footer">
+        底部
+    </div>
+</div>
+</body>
+</html>

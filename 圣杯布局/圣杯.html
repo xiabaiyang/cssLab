@@ -1,0 +1,104 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>圣杯布局：http://www.cnblogs.com/imwtr/p/4441741.html</title>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        min-width: 700px;
+    }
+
+    .header,
+    .footer {
+        border: 1px solid #333;
+        background: #aaa;
+        text-align: center;
+    }
+
+    .left,
+    .middle,
+    .right {
+        position: relative; /* step 5 */
+        float: left;
+        min-height: 130px; /* step 8 */
+    }
+
+    .container {
+        padding: 0 220px 0 200px; /* step 4 */
+        overflow: hidden;  /* step 1 */
+        border: 2px dashed yellow;
+        text-align: center;
+    }
+
+    .left {
+        margin-left: -100%; /* step 3 */
+        left: -200px; /* step 5 */
+        width: 200px;
+        background: red;
+    }
+
+    .right {
+        margin-left: -220px; /* step 6 */
+        right: -220px; /* step 7 */
+        width: 220px;
+        background: green;
+    }
+
+    .middle {
+        width: 100%; /* step 2 */
+        background: cadetblue;
+        word-break: break-all;
+
+    }
+
+    .footer {
+        /*clear: both;*/
+    }
+</style>
+<head>
+</head>
+<body>
+<div class="header">
+    <h4>header</h4>
+</div>
+<div class="container">
+    <div class="middle">
+        <h4>middle</h4>
+
+        <p>
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+        </p>
+    </div>
+    <div class="left">
+        <h4>left</h4>
+
+        <p>
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+        </p>
+    </div>
+    <div class="right">
+        <h4>right</h4>
+
+        <p>
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+        </p>
+    </div>
+</div>
+<div class="footer">
+    <h4>footer</h4>
+</div>
+</body>
+</html>

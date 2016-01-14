@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>行高</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .s1 {
+            background-color: lightgreen;
+            height: 50px;
+            line-height: 50px;
+            border: 3px solid red;
+        }
+        .d1 {
+            background-color: lightcoral;
+            border: 3px solid green;
+        }
+        .d2 {
+            margin-top: 30px;
+            background-color: lightseagreen;
+            border: 3px solid gold;
+        }
+    </style>
+</head>
+<body>
+<span class="s1">
+    行框的高度总是可以容纳内部所有的行内框
+    <br>
+    <span>设置line-height可以改变行框的高度</span>
+    <br>
+    <strong>垂直的padding、border、margin是不影响行内框的高度的。</strong>
+</span>
+<span>第二个span第二个span第二个span第二个span第二个span第二个span</span>
+
+<div class="d1">
+    将一些文本添加到块级元素开头，它也会被当作段落P处理
+    <p>段落</p>
+</div>
+
+<div class="d2">
+    <p>
+        一个包含3行文本的段落，每行文本形成一个无名行框。一个包含3行文本的段落，每行文本形成一个无名行框。
+        一个包含3行文本的段落，每行文本形成一个无名行框。一个包含3行文本的段落，每行文本形成一个无名行框。
+        一个包含3行文本的段落，每行文本形成一个无名行框。一个包含3行文本的段落，每行文本形成一个无名行框。
+        一个包含3行文本的段落，每行文本形成一个无名行框。一个包含3行文本的段落，每行文本形成一个无名行框。
+    </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>min-width</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .outer {
+            background-color: lightgreen;
+            width: 800px;
+            height: 200px;
+        }
+
+        .inner {
+            background-color: lightcoral;
+            width: 900px;
+            height: 100px;
+            min-width: 850px;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    outer
+    <div class="inner">
+        inner
+    </div>
+</div>
+</body>
+</html>

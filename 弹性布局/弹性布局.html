@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>弹性布局</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-size: 100%;
+        }
+
+        #wrapper {
+            /*background-color: lightseagreen;*/
+            width: 72em;
+            height: 100em;
+            margin: 0 auto;
+            text-align: left;
+        }
+    
+        #mainNav {
+            background-color: lightcoral;
+            width: 18em;
+            height: 80em;
+            float: left;
+        }
+
+        #content {
+            background-color: lightgrey;
+            width: 52em;
+            height: 80em;
+            float: right;
+        }
+
+        #mainContent {
+            background-color: lightgoldenrodyellow;
+            width: 32em;
+            height: 80em;
+            float: left;
+            text-align: center;
+        }
+
+        #secondaryContent {
+            background-color: lightskyblue;
+            width: 18em;
+            height: 80em;
+            float: right;
+            text-align: center;
+        }
+
+        #footer {
+            clear: both;
+            width: 72em;
+            height: 10em;
+            background-color: lightsalmon;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="mainNav">
+        左侧导航
+    </div>
+    <div id="content">
+        <div id="mainContent">
+            主要内容: 弹性布局主要的问题和固定宽度布局一样，不能充分利用可用空间。
+            另外，因为在文本字号增加时整个布局会加大，所以弹性布局会变得比浏览器窗口
+            宽，导致水平滚动条的出现。
+        </div>
+        <div id="secondaryContent">
+            次要内容：为了防止上面这种情况，可能需要在主体标签上添加100%的max-width.
+        </div>
+    </div>
+    <div id="footer">
+        底部
+    </div>
+</div>
+</body>
+</html>

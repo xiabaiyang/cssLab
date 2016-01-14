@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>流体布局</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #wrapper {
+            /*background-color: lightseagreen;*/
+            width: 85%;
+            height: 1000px;
+        }
+
+        #mainNav {
+            background-color: lightcoral;
+            width: 23%;
+            height: 800px;
+            float: left;
+            text-align: center;
+        }
+
+        #content {
+            background-color: lightgrey;
+            width: 75%;
+            height: 800px;
+            float: right;
+        }
+
+        #mainContent {
+            background-color: lightgoldenrodyellow;
+            width: 66%;
+            height: 800px;
+            float: left;
+            text-align: center;
+        }
+
+        #secondaryContent {
+            background-color: lightskyblue;
+            width: 31%;
+            height: 800px;
+            float: right;
+            text-align: center;
+        }
+
+        #footer {
+            clear: both;
+            width: 100%;
+            height: 100px;
+            background-color: lightsalmon;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="mainNav">
+        左侧导航
+    </div>
+    <div id="content">
+        <div id="mainContent">
+            主要内容:流体布局可以充分利用空间，但是在大分辨率显示器上仍然会过长。在窄窗口中
+            或者增加文本字号时，行会变得非常短，内容零碎。
+        </div>
+        <div id="secondaryContent">
+            次要内容：对于流体布局这些问题，可以使用弹性布局来解决。
+        </div>
+    </div>
+    <div id="footer">
+        底部
+    </div>
+</div>
+</body>
+</html>

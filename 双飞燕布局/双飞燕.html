@@ -1,0 +1,100 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>双飞燕布局：http://www.cnblogs.com/imwtr/p/4441741.html</title>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        /*min-width: 700px;*/
+    }
+
+    .header,
+    .footer {
+        border: 1px solid #333;
+        background: lightgreen;
+        text-align: center;
+    }
+
+    .sub,
+    .main,
+    .extra {
+        float: left;
+        min-height: 130px; /* step 4 */
+    }
+
+    .sub {
+        margin-left: -100%; /* step 2 */
+        width: 200px;
+        background: red;
+    }
+
+    .extra {
+        margin-left: -220px; /* step 3 */
+        width: 220px;
+        background: green;
+    }
+
+    .main {
+        width: 100%; /* step 1 */
+    }
+
+    .main-inner {
+        margin-left: 200px; /* step 3 */
+        margin-right: 220px; /* step 3 */
+        min-height: 130px; /* step 4 */
+        background: cadetblue;
+        text-align: center;
+        word-break: break-all;
+    }
+
+    .footer {
+        clear: both; /* step 5 */
+    }
+</style>
+<head>
+</head>
+<body>
+<div class="header">
+    <h4>header</h4>
+</div>
+<div class="main">
+    <div class="main-inner">
+        <h4>main</h4>
+        <p>
+            main11111111111111111
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+            111111111111111111111
+            11111111111111111main
+        </p>
+    </div>
+</div>
+<div class="sub">
+    <h4>sub</h4>
+    <p>
+        sub111111111111111111
+        111111111111111111111
+        111111111111111111111
+        111111111111111111sub
+    </p>
+</div>
+
+<div class="extra">
+    <h4>extra</h4>
+    <p>
+        extra1111111111111111
+        111111111111111111111
+        111111111111111111111
+        1111111111111111extra
+    </p>
+</div>
+<div class="footer">
+    <h4>footer</h4>
+</div>
+</body>
+</html>
