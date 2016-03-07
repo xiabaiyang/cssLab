@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>流体布局</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .outer {
+            height: 500px;
+            width: 500px;
+            border: 1px solid red;
+        }
+        .inner {
+            height: 200px;
+            width: 200px;
+            border: 1px solid green;
+        }
+        .center-vertical {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner center-vertical">
+            funny
+        </div>
+    </div>
+</body>
+</html>
