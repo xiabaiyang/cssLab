@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8"/>
+        <title>
+            任意多个元素的等宽导航栏
+        </title>
+        <style type="text/css">
+            * {
+            margin: 0;
+            padding: 0;
+            }
+            #nav {
+            text-align: justify;
+            min-width: 500px;
+            }
+            #nav:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            }
+            #nav li {
+            display: inline-block;
+            }
+            
+            #nav2 {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+            }
+            #nav2 ul {
+                display: table-row;
+                margin: 0;
+                padding: 0;
+            }
+            #nav2 ul li {
+                list-style: none;
+                display: table-cell;
+                text-align: center;
+            }
+            #nav2 ul li a {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="nav">
+            <li>
+                <a href="#">nav1</a>
+            </li>
+            <li>
+                <a href="#">nav1</a>
+                </li>
+            <li>
+                <a href="#">nav1</a>
+            </li>
+            <li>
+                <a href="#">nav1</a>
+            </li>
+            <li>
+                <a href="#">nav1</a>
+            </li>
+        </ul>
+
+        <div id="nav2">
+            <ul>
+                <li>
+                    <a href="#">
+                        nav2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        nav2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        nav2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        nav2
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        nav2
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

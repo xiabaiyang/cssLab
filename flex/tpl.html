@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>行高</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+        .flex-item-default {
+            width: 300px;
+            height: 250px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item-default">
+            Flex
+        </div>
+    </div>
+</body>
+</html>
