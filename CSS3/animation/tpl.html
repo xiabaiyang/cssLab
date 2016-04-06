@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	.box {
+		width: 100px;
+		height: 100px;
+		margin: 50px auto;
+		background-color: #f00;
+	}
+
+	.box:hover {
+		-webkit-animation-name: hover;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-timing-function: ease-in;
+		-webkit-animation-iteration-count: infinite;
+	}
+
+	@-webkit-keyframes hover {
+		0% { width: 100px, height: 100px; border-radius:  50%; }
+		50% { width: 200px; height: 200px; border-radius: 50%; }
+		100% {
+			width: 100px; height: 100px; border-radius: 50%; }
+	}
+</style>
+<body>
+	<p>ainmation属性：</p>
+	<ul>
+		<li>1. animation-name: @keyframes动画名称</li>
+		<li>2. animation-duration: 动画完成一个周期所花费的时间。默认是0</li>
+		<li>3. animation-timing-function: 动画的速度曲线。默认是ease</li>
+		<li>4. animation-delay: 动画开始的延迟时间。默认是0</li>
+		<li>5. ainmation-iteration-count: 动画被播放的次数。默认是1</li>
+		<li>6. animation-direction: 动画是否在下一周期逆行地播放。默认是normal</li>
+		<li>7. animation-play-state: 动画是否在运行或者暂停。默认是running</li>
+		<li>8. animation-fill-mode: 对象动画时间之外的状态</li>
+	</ul>
+
+	<div class="box"></div>
+</body>
+</html>
