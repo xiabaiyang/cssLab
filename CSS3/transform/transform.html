@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transform</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	.transform {
+		width: 1000px;
+		background: #fdfdfd;
+		margin: 50px auto;
+	}
+
+	.tranform:after {
+		content: ' ';
+		clear: both;
+		display: block;
+		overflow: hidden;
+	}
+
+	.transform > p {
+		width: 230px;
+		float: left;
+		border: 1px solid #999;
+		margin-left: 10px;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+
+	.transform > p strong {
+		display: block;
+		background-color: #eee;
+		line-height: 28px;
+		font-size: "Microsoft Yahei";
+		color: #333;
+		margin-bottom: 10px;
+	}
+
+	.transform > p span {
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		border: 1px solid #ccc;
+		background-color: #09f;
+	}
+
+	.transform > p .rotate {
+		transform: rotate(20deg);
+	}
+
+	.transform > p .translate {
+		transform: translate(-20px, 20px);
+	}
+
+	.transform > p .scale {
+		transform: scale(.5, .5);
+	}
+
+	.transform > p .skew {
+		transform: skew(20deg, -30deg);
+	}
+
+	.transform.origin > p span {
+		background-color: #0c0;
+		-webkit-transform-origin: 0 -40px;
+	}
+
+</style>
+<body>
+	<p>transform: 向元素应用2D或3D转换。该属性允许我们对元素进行旋转、缩放、移动或倾斜。</p>
+	<ul>
+		<li>1. rotate( 角度值 ): 旋转</li>
+		<li>2. translate( x, y ): 移动</li>
+		<li>3. scale( x, y ): 缩放</li>
+		<li>4. skew( x, y): 扭曲</li>
+		<li>5. matrix( a, b, c, d, e, f ): 矩阵</li>
+	</ul>
+	<p>transform-origin: 改变transform的基点（ 中心点 ）| transform-origin: x y;</p>
+	<p>box-shadow: 阴影 | box-shadow: inset( 设置内阴影 )	投影方式  x轴偏移量  y轴偏移量  阴影模糊半径   阴影扩展半径  阴影颜色; ps:可以使用多个阴影，用逗号隔开
+	</p>
+	<p>liner-gradient: 背景颜色线性渐变 | background: linear-gradient(起点, 起点颜色, 过度色（可选) 过渡色起点位置, 终点颜色);</p>
+
+	<div class="transform">
+		<p>
+			<strong>旋转</strong>
+			<span class="rotate"></span>
+		</p>
+		<p>
+			<strong>移动</strong>
+			<span class="translate"></span>
+		</p>
+		<p>
+			<strong>缩放</strong>
+			<span class="scale"></span>
+		</p>
+		<p>
+			<strong>扭曲</strong>
+			<span class="skew"></span>
+		</p>
+	</div>
+
+	<div class="transform origin">
+		<p>
+			<strong>旋转</strong>
+			<span class="rotate"></span>
+		</p>
+		<p>
+			<strong>移动</strong>
+			<span class="translate"></span>
+		</p>
+		<p>
+			<strong>缩放</strong>
+			<span class="scale"></span>
+		</p>
+		<p>
+			<strong>扭曲</strong>
+			<span class="skew"></span>
+		</p>
+	</div>
+
+</body>
+</html>

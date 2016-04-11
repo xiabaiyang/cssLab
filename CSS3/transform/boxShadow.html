@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>box-shadow</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	.box-shadow {
+		width: 1000px;
+		margin: 50px auto;
+		text-align: center;
+	}
+
+	.box-shadow:after {
+		content: ' ';
+		display: block;
+		clear: both;
+		overflow: hidden;
+	}
+
+	.box-shadow p {
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin-left: 100px;
+		border: 1px solid #999;
+		line-height: 100px;
+		background-color: #f9f9f9;
+		font-size: 20px;
+	}
+
+	.box-shadow p:first-child {
+		box-shadow: -5px -5px 3px 2px rgba(0, 0, 0, 0.3);
+	}
+
+	.box-shadow p:last-child {
+		box-shadow: inset -5px -5px 10px 2px rgba(0, 0, 0, 0.3);
+	}
+</style>
+<body>
+	<div class="box-shadow">
+		<p>外阴影</p>
+		<p>内阴影</p>
+	</div>
+</body>
+</html>
