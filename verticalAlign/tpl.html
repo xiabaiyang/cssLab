@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vertical-align</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	.baseLine {
+		display: inline-block;
+		width: 150px;
+		height: 150px;
+		border: 1px solid #cad5eb;
+		background-color: #f0f3f9;
+
+		line-height: 0;
+	}
+
+	p {
+		background-color: #555;
+		line-height: 0;
+		vertical-align: top;
+	}
+
+	.justify-fix {
+		display: inline-block;
+		width: 250px;
+		border: 1px solid red;
+		vertical-align: bottom;
+	}
+
+	.div2 {
+		height: 100px;
+		width: 100px;
+		padding: 30px;
+		margin: 20px;
+		border: 10px solid green;
+		background-color: #555;
+	}
+</style>
+<body>
+	<span class="baseLine"></span>
+	<span class="baseLine">vertical-align</span>
+	<span>对于文字来说，如果line-height为0，其height就为0</span>
+
+	<p style="text-align: justify;">
+		<img src="author.jpg" width="250">
+		<img src="author.jpg" width="250">
+		<img src="author.jpg" width="250">
+		<img src="author.jpg" width="250">
+		<img src="author.jpg" width="250">
+		<i class="justify-fix"></i>
+		<i class="justify-fix"></i>
+		<i class="justify-fix"></i>
+		<i class="justify-fix"></i>
+	</p>
+
+	<div class="div1">
+		<div class="div2"></div>
+	</div>
+</body>
+</html>
